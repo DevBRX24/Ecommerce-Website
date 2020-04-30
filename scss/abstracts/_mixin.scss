@@ -1,0 +1,39 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin wave-effect {
+  &__wave-effect {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    bottom: 0%;
+
+    &--content {
+      background: linear-gradient(
+        to right bottom,
+        rgba($color-white, 0.4),
+        rgba($color-primary, 0.4)
+      );
+    }
+  }
+}
+
+@mixin icon-color-change {
+  background-image: linear-gradient(to right, $color-primary, $color-tertiary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin center-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

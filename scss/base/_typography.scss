@@ -1,0 +1,90 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #2c3e50;
+}
+
+//Header
+.heading-primary {
+  color: $color-white-primary;
+  text-align: center;
+  backface-visibility: hidden;
+  /*Prevent shaking the element during animation*/
+  -webkit-backface-visibility: hidden;
+  &--main {
+    display: block;
+    font-size: 7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.5rem;
+    animation: moveInLeft 1s ease-out;
+    -webkit-animation: moveInLeft 1s ease-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 1.9rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    animation: moveInRight 1s ease-in;
+    -webkit-animation: moveInRight 1s ease-in;
+  }
+}
+
+.heading-secondary-dark {
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  display: inline-block;
+
+  &--style {
+    display: inline-block;
+    font-weight: 300;
+    background-image: linear-gradient(to right, $color-light, $color-tertiary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    border-bottom: 1px solid $color-primary;
+    margin: 2rem 0 5rem 0;
+  }
+}
+
+.heading-secondary-white {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: $color-white-primary;
+  font-size: 3rem;
+  display: inline-block;
+}
+
+.heading-tertiary {
+  letter-spacing: 0.2rem;
+  font-size: $default-font-size;
+  font-weight: 700;
+  color: #2c3e50;
+  text-transform: uppercase;
+  display: block;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.text-column {
+  column-count: 2;
+  column-rule: 1px solid $color-grey;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  column-gap: 4rem;
+}

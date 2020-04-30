@@ -1,0 +1,14 @@
+{
+  "name": "ecomm",
+  "version": "1.0.0",
+  "description": "Ecommerce website built using sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "author": "Brix Gavarra",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.0"
+  }
+}

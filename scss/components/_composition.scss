@@ -1,0 +1,20 @@
+.composition {
+  width: 100%;
+  display: inline-block;
+  &__photo {
+    height: 40rem;
+    overflow: hidden;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.3),
+        rgba($color-secondary, 0.3)
+      ),
+      url('/dist/img/about-small.jpg');
+
+    &--style {
+      box-shadow: -1rem 2rem 2rem rgba($color-black, 0.3);
+    }
+  }
+}
+
+@include wave-effect;

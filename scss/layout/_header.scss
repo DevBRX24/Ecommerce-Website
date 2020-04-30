@@ -1,0 +1,32 @@
+.header {
+  position: relative;
+  height: 85vh;
+  background: $color-primary;
+  background-size: cover;
+  box-shadow: 1.5rem 1.5rem 3rem rgba($color-black, 0.1),
+    -1.5rem -1.5rem 3rem rgba($color-black, 0.1);
+
+  &__logo-box {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+  }
+
+  &__logo {
+    height: 5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  @include wave-effect;
+}
